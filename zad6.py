@@ -20,7 +20,7 @@ def odd_sum_dictionaries(dict):
     argument = 1
     while argument <= len(dict):
         licznik=licznik+dict[argument]
-        argument = +2
+        argument = argument+2
     return licznik
 
 print(odd_sum_dictionaries(dict1))
