@@ -46,4 +46,13 @@ def ilosc(towar,rzecz,ilosc):
         if podslownik["nazwa"] == rzecz:
             podslownik["ilosc"] = ilosc
         return towar
-print(ilosc(towar,"banan",5))
+
+def filtr_jednostka(towar,jenostka):
+    dict1 = []
+    for podslownik in towar:
+        if podslownik["jednostka"] == jenostka:
+            dict1.append(podslownik)
+    return dict1
+
+print(filtr_jednostka(towar,"szt."))
+
